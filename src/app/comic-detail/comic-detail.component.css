@@ -1,0 +1,17 @@
+img{
+    width: 220px;
+    height: 334px;
+}
+
+.fora{
+    text-align:  center;
+    
+}
+.detalhes{
+    display: inline-block;
+    background-color: rgba(255, 255, 255,0.5);
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 10px;
+
+}

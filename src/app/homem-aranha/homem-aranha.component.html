@@ -1,0 +1,17 @@
+
+<app-comic-detail [comic]="selectedComic"></app-comic-detail>
+<h1> Homem-Aranha </h1>
+
+
+  <div fxLayout="row"  class="comics">
+    <div *ngFor="let comic of comics" [class.selected]="comic === selectedComic"
+    (click)="onSelect(comic)" class="choosed"> 
+      <a routerLink="/detail/{{comic.id}}">
+        <span class="badge">{{comic.title}}</span> 
+        <img src={{comic.thumbnail.path}}.{{comic.thumbnail.extension}}>     
+        <p>Mais informações</p>
+      </a>
+      
+    </div>
+  </div>
+ 
